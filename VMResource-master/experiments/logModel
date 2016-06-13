@@ -1,0 +1,15 @@
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mImportError[0m                               Traceback (most recent call last)
+[0;32m/usr/lib/python2.7/dist-packages/IPython/utils/py3compat.pyc[0m in [0;36mexecfile[0;34m(fname, *where)[0m
+[1;32m    202[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m    203[0m                 [0mfilename[0m [0;34m=[0m [0mfname[0m[0;34m[0m[0m
+[0;32m--> 204[0;31m             [0m__builtin__[0m[0;34m.[0m[0mexecfile[0m[0;34m([0m[0mfilename[0m[0;34m,[0m [0;34m*[0m[0mwhere[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[0;32m/home/nhuanhunter/MyWorking/VMResourcePrediction/experiments/GridSearchNNPD.py[0m in [0;36m<module>[0;34m()[0m
+[1;32m      1[0m [0;31m# Experiment GABPNN[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0;32mfrom[0m [0mestimators[0m[0;34m.[0m[0mGAEstimator[0m [0;32mimport[0m [0mGAEstimator[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0;32mfrom[0m [0mestimators[0m[0;34m.[0m[0mNeuralFlow[0m [0;32mimport[0m [0mNeuralFlowRegressor[0m[0;34m[0m[0m
+[1;32m      4[0m [0;32mfrom[0m [0mestimators[0m[0;34m.[0m[0mOptimizerNNEstimator[0m [0;32mimport[0m [0mOptimizerNNEstimator[0m[0;34m[0m[0m
+[1;32m      5[0m [0;32mfrom[0m [0mio_utils[0m[0;34m.[0m[0mGFeeder[0m [0;32mimport[0m [0mGFeeder[0m[0;34m[0m[0m
+
+[0;31mImportError[0m: No module named estimators.GAEstimator
