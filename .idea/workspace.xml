@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d41c82a5-161f-4956-bfc4-136da9ee11b3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FACO_0.0250266310141_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FACO_0.0320121575916_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FACO_0.521500847325_sliding_2.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/BPNN_0.000342049973597_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/BPNN_0.00145576247728_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000134789749277_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000177602291523_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000186708830424_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000193777951768_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000218286012501_sliding_2.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.000226724644323_sliding_2.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.0002354074224_sliding_2.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.00622463477311_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.0132701742412_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.0133217246141_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_0.0139249026237_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_4.67588546509e-05_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_59.7239280723_sliding_3.npz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GABPNN_9.34166552142e-05_sliding_2.npz" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/FuzzyEngine-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/FuzzyMyEngine-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/GExtract-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/GraphExperimentACO-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/GraphExperimentGA-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/.ipynb_checkpoints/PreloadData-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/0.000919497047747.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FACO_0.000991392297928_sliding_2.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FACO_0.00139444669267_sliding_2.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FACO_0.00147038667274_sliding_3.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/Figures/cpu_aconn.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/Figures/cpu_gann.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/Figures/disk_write.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/Figures/disk_write_aconn.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/Figures/figure_1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FuzzyEngine.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FuzzyEngine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FuzzyEngine_Sliding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/FuzzyMyEngine.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/GridSearchACO.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/GridSearchACONN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/GridSearchFuzzy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/GridSearchGA.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/GridSearchGANN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/ModelRunning.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/cpu_usage.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/data_training.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/data_training_origin.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/gcluster_1268205_1min.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/gcluster_normalize_space.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/machine_capacity_sampling_machineid_1268205_interval_1.csv.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/machine_request_sampling_machineid_1268205_interval_1.csv.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/gdata/machine_usage_sampling_machineid_1268205_interval_1.csv.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/vdc/sample_cpu_util.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/vdc/sample_disk_read.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/vdc/sample_disk_write.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/vdc/sample_network_incoming.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/data/vdc/sample_network_outgoing.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/ACOEstimator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/FeedFlow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/FuzzyNeuralNet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/FuzzyStep.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/GAEstimator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/NeuralFlow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/OptimizerNNEstimator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/estimators/periodicity.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/ExperimentACONN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/ExperimentCPU_DiskWrite_model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/ExperimentGANN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/GridSearchNNPD.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/_experiment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/logModel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/x_train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/experiments/y_predict.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/gridSearchSliding.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/io_utils/GFeeder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/io_utils/MetricFeeder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/io_utils/NumLoad.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/io_utils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logGA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logGA2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logGA3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logModel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logModel100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logModel2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logModel3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/logModel300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/endpoints" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/graph.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/model-5000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/model-5000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/model.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_0.00235638487775/saver.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/endpoints" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/graph.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/model-5000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/model-5000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/model.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.0088503722123/saver.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/endpoints" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/graph.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/model-5000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/model-5000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/model.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00887597044581/saver.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/endpoints" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/graph.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/model-5000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/model-5000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/model.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/model_full_metric_0.00893259062935/saver.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/preprocessing/FuzzyProcessor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/preprocessing/MinMaxScalerIO.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/preprocessing/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/profile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/requirements" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/sample_290_10min.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/sample_540_10min.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/sample_610_10min.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/train_file.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/utils/GraphUtil.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/utils/SlidingWindowUtil.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/utils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/utils/initializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/x_train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VMResource-master/y_predict.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/VMResourcePrediction.iml" afterPath="$PROJECT_DIR$/.idea/VMFuzzyPrediction.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/VMResource-master/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FuzzyEngine_Sliding.py" afterPath="$PROJECT_DIR$/FuzzyEngine_Sliding.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearchFuzzy.py" afterPath="$PROJECT_DIR$/GridSearchFuzzy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimators/NeuralFlow.py" afterPath="$PROJECT_DIR$/estimators/NeuralFlow.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/GridSearchNNPD.py" afterPath="$PROJECT_DIR$/experiments/GridSearchNNPD.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_utils/GFeeder.py" afterPath="$PROJECT_DIR$/io_utils/GFeeder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/y_predict.csv" afterPath="$PROJECT_DIR$/y_predict.csv" />
+    </list>
+    <ignored path="VMFuzzyPrediction.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="VMFuzzyPrediction" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GridSearchNNPD.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/GridSearchNNPD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+              <folding>
+                <element signature="e#20#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuzzyEngine_Sliding.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FuzzyEngine_Sliding.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/estimators/NeuralFlow.py" />
+        <option value="$PROJECT_DIR$/experiments/GridSearchNNPD.py" />
+        <option value="$PROJECT_DIR$/FuzzyEngine_Sliding.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="670" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VMFuzzyPrediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CloudWatch" />
+  </component>
+  <component name="RunManager" selected="Python.GridSearchNNPD">
+    <configuration default="false" name="GridSearchNNPD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiments" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiments/GridSearchNNPD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FuzzyEngine_Sliding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FuzzyEngine_Sliding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VMFuzzyPrediction" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.GridSearchNNPD" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FuzzyEngine_Sliding" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.GridSearchNNPD" />
+        <item index="1" class="java.lang.String" itemvalue="Python.FuzzyEngine_Sliding" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d41c82a5-161f-4956-bfc4-136da9ee11b3" name="Default" comment="" />
+      <created>1465881369193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1465881369193</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1366" height="670" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32675046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39856374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/experiments/GridSearchNNPD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#20#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FuzzyEngine_Sliding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="67" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/lib/python2.7/dist-packages/skflow-0.1.0-py2.7.egg!/skflow/estimators/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FuzzyEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estimators/ACOEstimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estimators/NeuralFlow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estimators/OptimizerNNEstimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/GridSearchNNPD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding>
+            <element signature="e#20#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FuzzyEngine_Sliding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

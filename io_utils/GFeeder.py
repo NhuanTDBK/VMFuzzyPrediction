@@ -2,7 +2,7 @@ from utils.SlidingWindowUtil import SlidingWindow
 from __init__ import *
 import os
 class GFeeder:
-    def __init__(self,skip_lists=1,split_size=None,file_name="data/gdata/gcluster_normalize_space.json"):
+    def __init__(self,skip_lists=1,split_size=None,normalize_space=True, file_name="data/gdata/gcluster_normalize_space.json"):
         self.skip_lists = skip_lists
         if(split_size!=None):
             self.split_size = split_size
@@ -11,22 +11,26 @@ class GFeeder:
         self.DISK_IO_TIME = 'disk_io_time'
         self.DISK_SPACE = 'disk_space'
         self.MEM_USAGE = 'mem_usage'
+        if(normalize_space==False):
+            self.file_name = "data/gdata/gcluster_1268205_1min.json"
+        else:
+            self.file_name = file_name
         self.metric_type = [
             self.CPU_UTIL, self.MEM_USAGE, self.DISK_IO_TIME,self.DISK_SPACE
         ]
         self.metrics = self.metric_type
         current_folder_path, current_folder_name = os.path.split(os.getcwd())
-        self.file_name=file_name
         if(current_folder_name!='VMResourcePrediction'):
             self.file_name = '../%s'%file_name
     def read(self,metrics=None):
         if (metrics!=None):
             self.metrics = metrics
-        return self._skip_windows(pd.read_json(self.file_name)[self.metrics][:1152614])
+
+        return self._skip_windows(pd.read_json(self.file_name,orient='records',dtype=float)[self.metrics][:1152614])
     def fetch_metric_train(self,data,n_sliding_window,range_fetch):
         from_range = range_fetch[0]
         to_range = range_fetch[1]
-        range_data=None
+        # range_data=None
         if(from_range==-1):
             range_data = data[:to_range]
         else:
@@ -41,17 +45,20 @@ class GFeeder:
             range_data = data[from_range + n_sliding_window:].reshape(-1, 1)
         else:
             range_data = data[from_range + n_sliding_window:to_range].reshape(-1, 1)
-        result = list(range_data)
+        result = np.array(range_data)
         return result
-    def _fetch(self,n_sliding_window,range_fetch=None):
+    def _fetch(self,data,n_sliding_window,range_fetch=None):
         data_fetch_X = []
         data_fetch_y = []
-        for column,data in self.result.iteritems():
+        tmp_iter = data
+        if(isinstance(data,pd.DataFrame) or isinstance(data,pd.Series)):
+            tmp_iter = data.iteritems()
+        for column,data in tmp_iter:
             data_fetch_X.append(self.fetch_metric_train(data, n_sliding_window,range_fetch))
             data_fetch_y.append(self.fetch_metric_test(data, n_sliding_window,range_fetch))
-        X_test = np.asarray([np.array(t, dtype=np.float32).flatten().tolist() for t in zip(*data_fetch_X)])
-        y_test = np.asarray([np.array(t).flatten().tolist() for t in zip(*data_fetch_y)])
-        return X_test, y_test
+        X = np.asarray([np.array(t).flatten().tolist() for t in zip(*data_fetch_X)])
+        y = np.asarray([np.array(t).flatten().tolist() for t in zip(*data_fetch_y)])
+        return X, y
     def _fetch_metric_window(self,metrics_windows,range_fetch=None):
         data_fetch_X = []
         data_fetch_y = []
@@ -62,14 +69,19 @@ class GFeeder:
         y_test = np.asarray(self._concat(zip(*data_fetch_y)))
         return X_test, y_test
         # return data_fetch_X,data_fetch_y
-    def split_train_and_test(self,metrics=None,n_sliding_window=4,train_size = 0.7):
-        self.result = self.read(metrics)
+    def split_train_and_test(self,data=None,metrics=None,n_sliding_window=4,train_size = 0.7):
+        allowed_classes = (pd.Series, pd.DataFrame)
+        if(data.empty):
+            self.result = self.read(metrics)
+        if isinstance(data, allowed_classes):
+            self.result = data[metrics]
+            self.CPU_UTIL = 'cpu_rate'
         length_data = self.result.shape[0]
         point = int(length_data*train_size)
         range_train = (-1,point)
         range_test = (point,-1)
-        X_train, y_train = self._fetch(n_sliding_window,range_train)
-        X_test, y_test = self._fetch(n_sliding_window,range_test)
+        X_train, y_train = self._fetch(self.result,n_sliding_window,range_train)
+        X_test, y_test = self._fetch(self.result,n_sliding_window,range_test)
         self.input_size = len(metrics)*n_sliding_window
         self.output_size = len(metrics)
         return X_train, y_train,  X_test, y_test

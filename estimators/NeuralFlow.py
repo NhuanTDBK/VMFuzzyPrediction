@@ -70,7 +70,7 @@ class NeuralFlowRegressor(BaseEstimator):
     def fit(self, X, y, **param):
         self.neural_shape = param.get("neural_shape")
         self.weights_matrix = param.get('weights_matrix')
-        self.kFold = KFold(X.shape[0],n_folds=10)
+        self.kFold = KFold(X.shape[0],n_folds=5)
         self.n_output = self.neural_shape[-1]
 
         self.n_hidden = self.neural_shape[1:-1]
