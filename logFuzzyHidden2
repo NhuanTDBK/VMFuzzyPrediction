@@ -1,0 +1,94 @@
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+FACO Model
+Started to parallel...
+/home/ubuntu/NhuanWorking/VMFuzzyPrediction/estimators/NeuralFlow.py:87: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if (self.weights_matrix == None):
+Begin grid search...
+Initialization
+Initilization
+Step #100, epoch #11, avg. train loss: 1.75996
+Step #200, epoch #22, avg. train loss: 0.20996
+Step #300, epoch #33, avg. train loss: 0.18907
+Step #400, epoch #44, avg. train loss: 0.17445
+Step #500, epoch #55, avg. train loss: 0.16239
+Step #600, epoch #66, avg. train loss: 0.15512
+Step #700, epoch #77, avg. train loss: 0.14192
+Step #800, epoch #88, avg. train loss: 0.13629
+Step #900, epoch #100, avg. train loss: 0.13144
+Step #1000, epoch #111, avg. train loss: 0.13194
+Step #1100, epoch #11, avg. train loss: 0.13509
+Step #1200, epoch #22, avg. train loss: 0.13000
+Step #1300, epoch #33, avg. train loss: 0.12844
+Step #1400, epoch #44, avg. train loss: 0.12793
+Step #1500, epoch #55, avg. train loss: 0.12694
+Step #1600, epoch #66, avg. train loss: 0.12795
+Step #1700, epoch #77, avg. train loss: 0.12478
+Step #1800, epoch #88, avg. train loss: 0.12492
+Step #1900, epoch #100, avg. train loss: 0.12554
+Step #2000, epoch #111, avg. train loss: 0.12594
+Step #2100, epoch #11, avg. train loss: 0.12435
+Step #2200, epoch #22, avg. train loss: 0.12232
+Step #2300, epoch #33, avg. train loss: 0.12255
+Step #2400, epoch #44, avg. train loss: 0.12181
+Step #2500, epoch #55, avg. train loss: 0.12136
+Step #2600, epoch #66, avg. train loss: 0.12216
+Step #2700, epoch #77, avg. train loss: 0.12021
+Step #2800, epoch #88, avg. train loss: 0.11979
+Step #2900, epoch #100, avg. train loss: 0.12061
+Step #3000, epoch #111, avg. train loss: 0.12148
+Step #3100, epoch #11, avg. train loss: 0.12549
+Step #3200, epoch #22, avg. train loss: 0.12174
+Step #3300, epoch #33, avg. train loss: 0.12205
+Step #3400, epoch #44, avg. train loss: 0.12141
+Step #3500, epoch #55, avg. train loss: 0.12111
+Step #3600, epoch #66, avg. train loss: 0.12063
+Step #3700, epoch #77, avg. train loss: 0.12005
+Step #3800, epoch #88, avg. train loss: 0.11962
+Step #3900, epoch #100, avg. train loss: 0.11943
+Step #4000, epoch #111, avg. train loss: 0.12231
+Step #4100, epoch #11, avg. train loss: 0.12313
+Step #4200, epoch #22, avg. train loss: 0.11893
+Step #4300, epoch #33, avg. train loss: 0.11953
+Step #4400, epoch #44, avg. train loss: 0.11852
+Step #4500, epoch #55, avg. train loss: 0.11835
+Step #4600, epoch #66, avg. train loss: 0.11813
+Step #4700, epoch #77, avg. train loss: 0.11853
+Step #4800, epoch #88, avg. train loss: 0.11781
+Step #4900, epoch #100, avg. train loss: 0.11711
+Step #5000, epoch #111, avg. train loss: 0.11948
+Step #5100, epoch #11, avg. train loss: 0.11135
+Step #5200, epoch #22, avg. train loss: 0.10750
+Step #5300, epoch #33, avg. train loss: 0.10761
+Step #5400, epoch #44, avg. train loss: 0.10682
+Step #5500, epoch #55, avg. train loss: 0.10738
+Step #5600, epoch #66, avg. train loss: 0.10677
+Step #5700, epoch #77, avg. train loss: 0.10706
+Step #5800, epoch #88, avg. train loss: 0.10692
+Step #5900, epoch #100, avg. train loss: 0.10607
+Step #6000, epoch #111, avg. train loss: 0.10669
+Step #6100, epoch #11, avg. train loss: 0.12319
+Step #6200, epoch #22, avg. train loss: 0.11333
+Step #6300, epoch #33, avg. train loss: 0.11355
+Step #6400, epoch #44, avg. train loss: 0.11242
+Step #6500, epoch #55, avg. train loss: 0.11335
+Step #6600, epoch #66, avg. train loss: 0.11315
+Step #6700, epoch #77, avg. train loss: 0.11323
+Step #6800, epoch #88, avg. train loss: 0.11196
+Step #6900, epoch #100, avg. train loss: 0.11204
+Step #7000, epoch #111, avg. train loss: 0.11234
+Step #7100, epoch #11, avg. train loss: 0.11281
+Step #7200, epoch #22, avg. train loss: 0.11020
+Step #7300, epoch #33, avg. train loss: 0.11123
+Step #7400, epoch #44, avg. train loss: 0.10925
+Step #7500, epoch #55, avg. train loss: 0.11276
+Step #7600, epoch #66, avg. train loss: 0.11167
+Step #7700, epoch #77, avg. train loss: 0.11024
+Step #7800, epoch #88, avg. train loss: 0.10973
+Step #7900, epoch #100, avg. train loss: 0.10950
+Step #8000, epoch #111, avg. train loss: 0.10982
+Step #8100, epoch #11, avg. train loss: 0.11113
+Step #8200, epoch #22, avg. train loss: 0.10766
+Step #8300, epoch #33, avg. train loss: 0.10792
+Step #8400, epoch #44, avg. train loss: 0.10687
+Step #8
