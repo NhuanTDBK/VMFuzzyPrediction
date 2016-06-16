@@ -5,8 +5,8 @@ from io_utils.GFeeder import GFeeder
 from utils.initializer import *
 
 param_dicts = {
-    "Q":np.arange(0.01,0.1,step=0.01),
-    "epsilon":np.arange(0.1,1.0,step=0.05),
+    "Q":np.arange(0.01,0.05,step=0.01),
+    "epsilon":np.arange(0.1,0.6,step=0.05),
     "number_of_solutions":np.arange(30,200)
 }
 n_windows = 4

@@ -9,7 +9,7 @@ from utils.initializer import *
 from utils.SlidingWindowUtil import SlidingWindow
 from sklearn.metrics.regression import mean_squared_error,mean_absolute_error
 # length of sliding windows for input
-n_sliding_window = 3
+n_sliding_window = 5
 dat_usage = pd.read_csv('../sample_610_10min.csv')['cpu_rate'][:2400]
 # dat_usage = pd.read_csv('cpu_usage.csv')['cpu_usage']
 
@@ -41,11 +41,11 @@ metrics_types = ['cpu_rate']
 print "Getting data"
 # X_train,y_train,X_test,y_test = dataFeeder.split_train_and_test(data=dat_usage,metrics=metrics_types,n_sliding_window=n_sliding_window,train_size=0.7)
 # Number of hiddens node (one hidden layer)
-n_hidden = 15
+n_hidden = 20
 neural_shape = [X_train_f.shape[1],n_hidden,1]
 fit_param = {'neural_shape':neural_shape}
 
-neuralNet = NeuralFlowRegressor(learning_rate= 1E-02)
+neuralNet = NeuralFlowRegressor(learning_rate=1E-03,steps=5000)
 # estimator = GAEstimator(cross_rate=0.7, mutation_rate=0.01)
 estimator = ACOEstimator(Q=0.7,epsilon=0.1,number_of_solutions=50)
 optimizer = OptimizerNNEstimator(estimator,neuralNet)
@@ -54,7 +54,7 @@ y_pred = optimizer.predict(X_test_f)
 # score_nn =  optimizer.score(X_test_f,y_test[n_sliding_window-2:])
 score_nn = np.sqrt(mean_squared_error(y_pred=y_pred,y_true=y_test[n_sliding_window-2:]))
 print score_nn
-np.savez('GABPNN_%s_sliding_%s'%(score_nn,n_sliding_window),y_test=y_test, y_pred=y_pred)
+np.savez('../model_saved/GABPNN_%s_sliding_%s'%(score_nn,n_sliding_window),y_test=y_test, y_pred=y_pred)
 plot_figure(y_pred=y_pred,y_true=y_test[1:],title="BPNN Sliding window = %s, rmse = %s, hidden nodes = %s "%(n_sliding_window,score_nn,n_hidden))
 # score_list = {}
 # for n_hidden in np.arange(240,300,step=1):
