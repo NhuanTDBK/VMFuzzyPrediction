@@ -49,12 +49,12 @@ for i in range (0,testing_set_size - 1):
     y_test[i] = dat_usage[i + training_set_size + 1]
 
 # Number of hiddens node (one hidden layer)
-n_hidden = 600
+n_hidden = 350
 sliding_number = 3
 
 # <codecell>
 
-fuzzyEngine = FuzzyFlow(fuzzy_distance=0.026,fuzzy_set_size=26)
+fuzzyEngine = FuzzyFlow(fuzzy_distance=0.026,fuzzy_set_size=26,fuzzy_norm=0.2)
 X_train_f = np.array(fuzzyEngine.fit_transform(X_train))
 y_train_f = np.array(fuzzyEngine.fit_transform(y_train))[sliding_number-1:]
 X_test_f = np.array(fuzzyEngine.fit_transform(X_test))
@@ -75,11 +75,11 @@ neural_shape = [len(X_train_f[0]),n_hidden,len(y_train_f[0])]
 # <codecell>
 
 # Initialize ACO Estimator
-estimator = ACOEstimator(Q=0.5,epsilon=0.1,number_of_solutions=100)
+estimator = ACOEstimator(Q=0.65,epsilon=0.01,number_of_solutions=100)
 # estimator = GAEstimator(cross_rate=0.7, mutation_rate=0.01,pop_size=45)
 # estimator = GAEstimator(cross_rate=0.65,mutation_rate=0.01)
 fit_param = {'neural_shape':neural_shape}
-neuralNet = NeuralFlowRegressor(learning_rate=1E-03,verbose=1,steps=6000)
+neuralNet = NeuralFlowRegressor(learning_rate=1E-04,verbose=1,steps=8000)
 
 # There are many techniques for combining GA with NN. One of this, the optimizer solution of GA will be weights initialized of NN
 optimizer = OptimizerNNEstimator(estimator,neuralNet)

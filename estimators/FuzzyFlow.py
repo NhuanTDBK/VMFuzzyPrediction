@@ -2,16 +2,17 @@ import pandas as pd
 import numpy as np
 import math
 class FuzzyFlow(object):
-    def __init__(self,fuzzy_distance = 0.02,fuzzy_set_size = 0):
+    def __init__(self,fuzzy_distance = 0.02,fuzzy_set_size = 0, fuzzy_norm = 0.25):
 
         self.fuzzy_distance = fuzzy_distance
         self.fuzzy_set_size = fuzzy_set_size
+        self.fuzzy_norm = fuzzy_norm
     def fuzzy(self,training_set):
         length_x_train = training_set.size
         #  Calculate difference in training data
         difference = np.zeros(length_x_train - 1)
         for i in range(0, length_x_train - 1):
-            difference[i] = training_set[i + 1] - training_set[i] + 0.25
+            difference[i] = training_set[i + 1] - training_set[i] + self.fuzzy_norm
         # Estimate fuzzy size
         if(self.fuzzy_set_size==0):
             self.fuzzy_set_size = int(math.ceil(difference.max()/self.fuzzy_distance)+1)
@@ -43,7 +44,7 @@ class FuzzyFlow(object):
             for j in range (0, self.fuzzy_set_size):
                 tu = tu + self.fuzzy_set[j] *  training_result[i][j]
                 mau = mau + training_result[i][j]
-            difference = tu / mau - 0.25
+            difference = tu / mau - self.fuzzy_norm
             y_pred[i] = testing_set[i] + difference
         return y_pred
     def fit_transform(self,data):

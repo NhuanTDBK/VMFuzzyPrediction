@@ -1,12 +1,9 @@
 import matplotlib.pyplot as plt
 import skflow
 import tensorflow as tf
-import numpy as np
-import pandas as pd
 from sklearn.base import BaseEstimator
 from sklearn.cross_validation import KFold
 from sklearn.metrics import mean_squared_error
-
 
 from utils.initializer import *
 
@@ -16,12 +13,13 @@ class NeuralFlowRegressor(BaseEstimator):
         return {
             "uniform_init": self.uniform_init,
             "learning_rate": self.learning_rate,
-            "activation": self.activation,
+            "activation": self.activation_name,
             "optimize": self.optimize,
             "steps": self.steps,
             "batch_size": self.batch_size,
             "weights_matrix": self.weights_matrix,
-            "model_fn": self.model_fn
+            "model_fn": self.model_fn,
+            "n_classes": self.n_classes
         }
 
     def set_params(self, **params):
@@ -29,13 +27,20 @@ class NeuralFlowRegressor(BaseEstimator):
             self.__setattr__(param, value)
         return self
 
-    def __init__(self, uniform_init=True, learning_rate=1E-01, activation=None, optimize="Adam", steps=1000,
-                 batch_size=100, weights_matrix=None, model_fn=None,verbose=0):
+    def __init__(self, uniform_init=True, learning_rate=1E-01, activation="relu", optimize="Adam", steps=1000,
+                 batch_size=100, weights_matrix=None, model_fn=None,verbose=0,cross_validation=False,n_classes = 0,hidden_nodes=None):
         print "Initialization"
-        if (activation == None):
-            self.activation = tf.nn.relu
-        elif (activation == "sigmoid"):
-            self.activation = tf.nn.sigmoid
+	self.activation_name = activation
+        activate_fn = {
+            "relu":tf.nn.relu,
+            "sigmoid":tf.nn.sigmoid,
+            "tanh":tf.nn.tanh
+        }
+        # if (activation == "ReLU"):
+        #     self.activation = tf.nn.relu
+        # elif (activation == "sigmoid"):
+        #     self.activation = tf.nn.sigmoid
+        self.activation = activate_fn[activation]
         # Initialize neural network shape
         self.learning_rate = learning_rate
         self.steps = steps
@@ -50,6 +55,12 @@ class NeuralFlowRegressor(BaseEstimator):
         self.weights_matrix = None
         self.network = None
         self.verbose = verbose
+        self.n_classes = n_classes
+        self.cross_validation = cross_validation
+        if type(hidden_nodes) is list:
+            self.hidden_nodes = np.array(hidden_nodes)
+        else:
+            self.hidden_nodes = hidden_nodes
     def model_regression(self, X, y):
         input_flow = X
         for hidden_node in self.n_hidden:
@@ -68,14 +79,24 @@ class NeuralFlowRegressor(BaseEstimator):
         return self.network.predict(X)
 
     def fit(self, X, y, **param):
-        self.neural_shape = param.get("neural_shape")
+        self.neural_shape = []
+        if(param.has_key('neural_shape')):
+            self.neural_shape = param.get("neural_shape")
+            self.n_output = self.neural_shape[-1]
+            self.n_hidden = self.neural_shape[1:-1]
+            self.number_of_layers = len(self.neural_shape)
+        else:
+            self.n_input = len(X[0])
+            if type(y[0]) is list:
+                self.n_output = len(y[0])
+            else:
+                self.n_output = 1
+            self.neural_shape = self.hidden_nodes.tolist()
+            self.neural_shape.insert(0,self.n_input)
+            self.neural_shape.append(self.n_output)
+            self.n_hidden = self.hidden_nodes
+        self.kFold = KFold(X.shape[0], n_folds=5)
         self.weights_matrix = param.get('weights_matrix')
-        self.kFold = KFold(X.shape[0],n_folds=5)
-        self.n_output = self.neural_shape[-1]
-
-        self.n_hidden = self.neural_shape[1:-1]
-
-        self.number_of_layers = len(self.neural_shape)
         self.weight_layers = [(self.neural_shape[t - 1], self.neural_shape[t]) for t in
                               range(1, len(self.neural_shape))]
         self.bias_layers = [self.neural_shape[t] for t in range(1, len(self.neural_shape))]
@@ -84,7 +105,7 @@ class NeuralFlowRegressor(BaseEstimator):
         for layer in self.total_nodes_per_layer:
             self.total_nodes += (layer[0][0] + 1) * layer[0][1]
         # If weights are None then initialize randomly
-        if (self.weights_matrix == None):
+        if self.weights_matrix == None:
             self.W, self.b = initialize_param(self.weight_layers, self.bias_layers, self.uniform_init)
         else:
             self.W, self.b = self.set_weights(self.weights_matrix)
@@ -95,12 +116,15 @@ class NeuralFlowRegressor(BaseEstimator):
         self.X = tf.placeholder("float", [None, self.neural_shape[0]], name="input")
         self.y = tf.placeholder("float", [None, self.neural_shape[-1]], name="output")
         #self.config_addon = skflow.addons.ConfigAddon(num_cores=4, gpu_memory_fraction=0.6)
-        self.network = skflow.TensorFlowEstimator(model_fn=self.model_fn, n_classes=0,
+        self.network = skflow.TensorFlowEstimator(model_fn=self.model_fn, n_classes=self.n_classes,
                                                   steps=self.steps, learning_rate=self.learning_rate,
                                                   batch_size=self.batch_size,
-                                                  optimizer=self.optimize, verbose=self.verbose,continue_training=True)
-        for train,test in self.kFold:
-            self.network.fit(X[train],y[train])
+                                                  optimizer=self.optimize,verbose=self.verbose,continue_training=True)
+        if(self.cross_validation):
+            for train,test in self.kFold:
+                self.network.fit(X[train],y[train])
+        else:
+            self.network.fit(X,y)
         return self
 
     def weight_init(self, shape, dtype):
@@ -137,33 +161,3 @@ class NeuralFlowRegressor(BaseEstimator):
         self.W = W
         self.b = b
         return W, b
-
-    def fuzzy(self, training_set, length_x_train):
-        # data = pd.read_csv('cpu_usage.csv')
-
-        fuzzy_set_size = 26
-        fuzzy_distance = 0.02
-
-        # length_x_train = training_set.size
-        difference = np.zeros(length_x_train - 1)
-
-        for i in range(0, length_x_train - 1):
-            difference[i] = training_set[i + 1] - training_set[i] + 0.25
-
-        # df = pd.DataFrame(data = difference, columns=['difference'])
-        # df.to_csv('difference.csv')
-
-        fuzzy_set = np.zeros(fuzzy_set_size)
-        for i in range(0, fuzzy_set_size):
-            fuzzy_set[i] = fuzzy_distance * i + fuzzy_distance / 2
-
-        fuzzy_result = np.zeros([length_x_train - 1, fuzzy_set_size])
-        for i in range(0, length_x_train - 2):
-            j = int(difference[i] / fuzzy_distance)
-            fuzzy_result[i][j] = 1
-            fuzzy_result[i][j - 1] = (fuzzy_set[j + 1] + fuzzy_set[j] - 2 * difference[i]) / (2 * fuzzy_distance)
-            fuzzy_result[i][j + 1] = (- fuzzy_set[j - 1] - fuzzy_set[j] + 2 * difference[i]) / (2 * fuzzy_distance)
-        # df = pd.DataFrame(data=fuzzy_result)
-        # df.to_csv('x_train.csv')
-
-        return fuzzy_result
