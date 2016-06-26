@@ -2,80 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d41c82a5-161f-4956-bfc4-136da9ee11b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_0.0138248622822_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_0.0278701377002_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_0.0822061842522_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_0.16056970103_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_1.72236098176_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fuzzy_Time_Series_3.91713516723_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000257975555905_sliding_4.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000463859364048_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0159746903824_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.015993727849_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0160074766386_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0160406692147_sliding_3.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.016254802041_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.016406799515_sliding_4.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0164548259503_sliding_4.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0168127788878_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0168193158786_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.017105409996_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0175437612628_sliding_4.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0181624523911_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0195340182415_sliding_5.npz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FuzzyTime-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FuzzyTime.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/GridSearchNNPD_RAM.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logFuzzyRAM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ram_job_610.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample_610_10min2.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/experiments/GABPNN_59.7239280723_sliding_3.npz" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000134789749277_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000134789749277_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000177602291523_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000177602291523_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000186708830424_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000186708830424_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000193777951768_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000193777951768_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000218286012501_sliding_2.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000218286012501_sliding_2.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.000226724644323_sliding_2.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.000226724644323_sliding_2.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.0002354074224_sliding_2.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0002354074224_sliding_2.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.00622463477311_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.00622463477311_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.0132701742412_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0132701742412_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.0133217246141_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0133217246141_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_0.0139249026237_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_0.0139249026237_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_4.67588546509e-05_sliding_3.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_4.67588546509e-05_sliding_3.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/GABPNN_9.34166552142e-05_sliding_2.npz" afterPath="$PROJECT_DIR$/model_saved/GABPNN_9.34166552142e-05_sliding_2.npz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/checkpoint" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/checkpoint" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/endpoints" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/endpoints" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/graph.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/graph.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/model-5000" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/model-5000" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/model-5000.meta" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/model-5000.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/model.def" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/model.def" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_0.00235638487775/saver.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_0.00235638487775/saver.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/checkpoint" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/checkpoint" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/endpoints" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/endpoints" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/graph.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/graph.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/model-5000" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/model-5000" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/model-5000.meta" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/model-5000.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/model.def" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/model.def" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.0088503722123/saver.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.0088503722123/saver.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/checkpoint" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/checkpoint" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/endpoints" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/endpoints" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/graph.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/graph.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/model-5000" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/model-5000" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/model-5000.meta" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/model-5000.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/model.def" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/model.def" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00887597044581/saver.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00887597044581/saver.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/checkpoint" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/checkpoint" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/endpoints" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/endpoints" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/graph.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/graph.pbtxt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/model-5000" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/model-5000" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/model-5000.meta" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/model-5000.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/model.def" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/model.def" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model_full_metric_0.00893259062935/saver.pbtxt" afterPath="$PROJECT_DIR$/model_saved/model_full_metric_0.00893259062935/saver.pbtxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FuzzyEngine_Sliding_RAM.py" afterPath="$PROJECT_DIR$/FuzzyEngine_Sliding_RAM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimators/FuzzyFlow.py" afterPath="$PROJECT_DIR$/estimators/FuzzyFlow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimators/NeuralFlow.py" afterPath="$PROJECT_DIR$/estimators/NeuralFlow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/y_predict.csv" afterPath="$PROJECT_DIR$/y_predict.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/FuzzyTime-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FuzzyTime-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FuzzyTime.ipynb" afterPath="$PROJECT_DIR$/FuzzyTime.ipynb" />
     </list>
     <ignored path="VMFuzzyPrediction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,20 +23,7 @@
     <favorites_list name="VMFuzzyPrediction" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NeuralFlow.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/estimators/NeuralFlow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,10 +53,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="711" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="682" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -187,6 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,7 +137,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,26 +385,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="711" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="682" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19058296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19058296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32675046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32688928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39718804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32688928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854578" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39718804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -542,11 +456,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/estimators/NeuralFlow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/decisions/scale_vm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#66#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,7 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="52" column="84" selection-start-line="52" selection-start-column="84" selection-end-line="52" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#66#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="52" column="84" selection-start-line="52" selection-start-column="84" selection-end-line="52" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
-          <folding>
-            <element signature="e#66#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="52" column="84" selection-start-line="52" selection-start-column="84" selection-end-line="52" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,9 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#66#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="52" column="84" selection-start-line="52" selection-start-column="84" selection-end-line="52" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,9 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="80" column="41" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="41" />
-          <folding>
-            <element signature="e#66#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,13 +755,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/estimators/NeuralFlow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
+        <state relative-caret-position="15">
           <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />

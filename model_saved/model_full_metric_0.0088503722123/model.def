@@ -1,1 +1,0 @@
-{"continue_training": true, "tf_master": "", "optimizer": "Adam", "keep_checkpoint_every_n_hours": 10000, "class_name": "TensorFlowEstimator", "config_addon": {"config": null}, "learning_rate": 0.1, "max_to_keep": 5, "batch_size": 100, "steps": 1000, "n_classes": 0, "tf_random_seed": 42, "verbose": 0}
