@@ -1,11 +1,13 @@
 from sklearn.base import BaseEstimator
-
+from monitors.BaseMonitor import Monitor
 from FeedFlow import FeedFlow
 from utils.initializer import *
+import sys
+
 # In[150]:
 class ACOEstimator(BaseEstimator):
     def __init__(self,neural_shape=None,number_of_weights=None,number_of_solutions=100,max_epochs = 100,error_criteria = 0.9,
-                 epsilon = 0.75,const_sd = 0.1,Q=0.08,**kwargs):
+                 epsilon = 0.75,const_sd = 0.1,Q=0.08,hidden_nodes=None,**kwargs):
         self.epsilon = epsilon
         self.max_epochs = max_epochs
         self.error_criteria = error_criteria
@@ -18,6 +20,8 @@ class ACOEstimator(BaseEstimator):
         self.best_archive = []
         self._estimator_type="regressor"
         self.top_k = 1
+        self.hidden_nodes = hidden_nodes
+        self.monitor = Monitor(type_train="ACO Optimization")
     def get_params(self, deep=True):
         return {
             "epsilon":self.epsilon,
@@ -47,21 +51,32 @@ class ACOEstimator(BaseEstimator):
                 # print summary_writter[-1]
             if(self.sorted_archive==None):
                 return self.archive[0]
-            # best_error = summary_writter[-1]
-            # weights = self.calculate_weights(self.archive.shape)
             self.archive = self.sampling_more(self.sorted_archive,weights,self.epsilon)
             self.sorted_archive = self.calculate_fitness(self.score_fn,self.archive)
+            # print "ACO - Epoch %s. Training loss: %s"%(i,self.best_loss)
+            self.monitor.update(step=i,loss=self.best_loss)
             # except Exception as e:
             #     print e
             #     break
-        print "Found best loss %f, epoch %s"%(self.best_loss,i)
+        sys.stdout.write("Found best loss %f"%self.monitor.min_loss)
         return self.best_archive
 
     def fit(self, X, y,**param):
 
         self.X = X
         self.y = y
-        self.neural_shape = param.get('neural_shape')
+        if (param.has_key('neural_shape')):
+            self.neural_shape = param.get("neural_shape")
+            self.n_output = self.neural_shape[-1]
+            self.n_hidden = self.neural_shape[1:-1]
+            self.number_of_layers = len(self.neural_shape)
+        else:
+            self.n_input = len(X[0])
+            self.n_output = len(y[0])
+            self.neural_shape = self.hidden_nodes.tolist()
+            self.neural_shape.insert(0, self.n_input)
+            self.neural_shape.append(self.n_output)
+            self.n_hidden = self.hidden_nodes
         self.archive = param.get("archive")
         if param.has_key("top_k"):
             self.top_k = param.get("top_k")
