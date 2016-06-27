@@ -1,25 +1,45 @@
-from sklearn.grid_search import GridSearchCV
-from estimators.GAEstimator import GAEstimator
-from io_utils.GFeeder import GFeeder
-from utils.initializer import *
-from io_utils.NumLoad import *
+import math
 
-param_dicts = {
-    "cross_rate":np.arange(0.1,1.0,step=0.05),
-    "pop_size":[45,55,60],
-    "mutation_rate":np.arange(0.01,0.07,step=0.01),
-    'gen_size': [100,150,200]
+from pandas import DataFrame
+from sklearn.grid_search import ParameterGrid
+
+from __init__fuzzy import *
+
+
+def experiment(sliding_number=3, hidden_nodes=15):
+    print "New loop"
+    dat_nn = np.asarray(scaler.fit_transform(dat))
+    X_train_size = int(len(dat_nn) * 0.7)
+    sliding = np.array(list(SlidingWindow(dat_nn, sliding_number)))
+    X_train_nn = sliding[:X_train_size]
+    y_train_nn = dat_nn[sliding_number:X_train_size + sliding_number].reshape(-1, 1)
+    X_test_nn = sliding[X_train_size:]
+    y_test_nn = dat_nn[X_train_size + sliding_number - 1:].reshape(-1, 1)
+    y_actual_test = dat[X_train_size + sliding_number - 1:].tolist()
+
+    fit_params = {
+        'neural_shape': [len(X_train_nn[0]), hidden_nodes, 1]
+    }
+    ga_estimator = GAEstimator(cross_rate=0.85, mutation_rate=0.05, gen_size=100, pop_size=40)
+    nn = NeuralFlowRegressor(hidden_nodes=[hidden_nodes], optimize='Adam'
+                             , steps=20000, learning_rate=1E-03)
+    classifier = OptimizerNNEstimator(ga_estimator, nn)
+    classifier.fit(X_train_nn, y_train_nn, **fit_params)
+    y_pred = scaler.inverse_transform(classifier.predict(X_test_nn))
+    score_mape = mean_absolute_error(y_pred, y_actual_test)
+    score_rmse = math.sqrt(mean_squared_error(y_pred, y_actual_test))
+    np.savez('fuzzy_GABPNN_%s_%s' % (sliding_number, score_mape), y_pred=y_pred, y_true=y_actual_test)
+    return sliding_number, hidden_nodes, score_rmse, score_mape
+
+
+sliding_number = np.arange(2, 6)
+hidden_nodes = [10, 12, 15]
+params = {
+    "sliding_number": sliding_number,
+    "hidden_nodes": hidden_nodes
 }
-n_windows = 3
-n_hidden = 10
-#dataFeeder = GFeeder(skip_lists=3)
-#X_train,y_train,X_test,y_test = dataFeeder.split_train_and_test(n_sliding_window=n_windows)
-X_train,y_train,X_test,y_test = load_training_from_npz("../bpnn_direct.npz")
-neural_shape = [len(X_train[0]),n_hidden,1]
-estimator = GAEstimator()
-fit_param = {'neural_shape':neural_shape}
-# estimator.fit(X,y,**fit_param)
-gs = GridSearchCV(estimator,param_grid=param_dicts,n_jobs=-1,fit_params=fit_param,scoring='mean_squared_error')
-gs.fit(X_train,y_train)
-print gs.best_estimator_
-print gs.best_estimator_.score(X_test,y_test)
+param_grid = list(ParameterGrid(params))
+result = [experiment(sliding_number=param['sliding_number'], hidden_nodes=param['hidden_nodes']) for param in
+          param_grid]
+result = DataFrame(result, columns=["sliding_number", "hidden_nodes", "rmse", "mae"])
+result.to_csv('gabpnn_experiment.csv')

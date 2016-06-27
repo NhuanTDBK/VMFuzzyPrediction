@@ -1,19 +1,13 @@
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
 import math
-from estimators.NeuralFlow import *
-from utils.SlidingWindowUtil import SlidingWindow
 
-from sklearn import datasets, metrics
-from sklearn.metrics import mean_absolute_error
+from sklearn.preprocessing import MinMaxScaler
+
+from estimators.NeuralFlow import *
 from utils.GraphUtil import *
-from estimators.GAEstimator import GAEstimator
-from estimators.OptimizerNNEstimator import OptimizerNNEstimator
 
 print "Loading Data"
 scaler = MinMaxScaler()
-dat = pd.read_csv('../sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
+dat = pd.read_csv('.sampling_617685_metric_10min_datetime.csv', parse_dates=True, index_col=0)[:3000]
 dat = pd.Series(dat['cpu_rate'].round(3))
 distance = round(dat.max() / (dat.max() / 0.25 + 1),4)
 print "Fuzzy distance = %s"%distance
