@@ -28,7 +28,7 @@ def experiment(sliding_number=3, hidden_nodes=15):
     y_pred = scaler.inverse_transform(classifier.predict(X_test_nn))
     score_mape = mean_absolute_error(y_pred, y_actual_test)
     score_rmse = math.sqrt(mean_squared_error(y_pred, y_actual_test))
-    np.savez('model_saved/GABPNN_%s_%s' % (sliding_number, score_mape), y_pred=y_pred, y_true=y_actual_test)
+    np.savez('model_saved/GABPNN_%s_%s' % (sliding_number, score_rmse), y_pred=y_pred, y_true=y_actual_test)
     return sliding_number, hidden_nodes, score_rmse, score_mape
 
 
