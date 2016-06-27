@@ -1,5 +1,5 @@
 from sklearn.base import BaseEstimator
-from monitors.BaseMonitor import Monitor
+#from monitors.BaseMonitor import Monitor
 from FeedFlow import FeedFlow
 from utils.initializer import *
 import sys
@@ -21,7 +21,7 @@ class ACOEstimator(BaseEstimator):
         self._estimator_type="regressor"
         self.top_k = 1
         self.hidden_nodes = hidden_nodes
-        self.monitor = Monitor(type_train="ACO Optimization")
+        #self.monitor = Monitor(type_train="ACO Optimization")
     def get_params(self, deep=True):
         return {
             "epsilon":self.epsilon,
@@ -54,7 +54,7 @@ class ACOEstimator(BaseEstimator):
             self.archive = self.sampling_more(self.sorted_archive,weights,self.epsilon)
             self.sorted_archive = self.calculate_fitness(self.score_fn,self.archive)
             # print "ACO - Epoch %s. Training loss: %s"%(i,self.best_loss)
-            self.monitor.update(step=i,loss=self.best_loss)
+            #self.monitor.update(step=i,loss=self.best_loss)
             # except Exception as e:
             #     print e
             #     break

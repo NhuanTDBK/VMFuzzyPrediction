@@ -5,17 +5,17 @@ from utils.initializer import *
 from io_utils.NumLoad import *
 
 param_dicts = {
-    "cross_rate":[0.65,0.7],
+    "cross_rate":np.arange(0.1,1.0,step=0.05),
     "pop_size":[45,55,60],
-    "mutation_rate":np.arange(0.01,0.05,step=0.01),
-    'gen_size': [100,150]
+    "mutation_rate":np.arange(0.01,0.07,step=0.01),
+    'gen_size': [100,150,200]
 }
 n_windows = 3
-n_hidden = 15
+n_hidden = 10
 #dataFeeder = GFeeder(skip_lists=3)
 #X_train,y_train,X_test,y_test = dataFeeder.split_train_and_test(n_sliding_window=n_windows)
 X_train,y_train,X_test,y_test = load_training_from_npz("fuzzy_train_direct.npz")
-neural_shape = [len(X_train[0],n_hidden,1]
+neural_shape = [len(X_train[0]),n_hidden,1]
 estimator = GAEstimator()
 fit_param = {'neural_shape':neural_shape}
 # estimator.fit(X,y,**fit_param)
