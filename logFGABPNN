@@ -5,34 +5,34 @@ Fuzzy distance = 0.2489
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [13.31(27.77)/10.28(5.00)/11.09(11.09)]
-Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [19.08(42.86)/14.72(5.88)/15.90(15.90)]
-Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [29.25(49.89)/21.37(8.67)/24.37(24.37)]
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [12.89(33.97)/10.22(5.07)/10.74(10.74)]
+Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [21.54(41.69)/16.27(6.84)/17.95(17.95)]
+Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [53.98(61.90)/27.60(12.28)/44.98(44.98)]
 Gen. 30 (100.00%):estimators/NeuralFlow.py:108: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
   if self.weights_matrix == None:
- Max/Min/Avg Fitness(Raw) [34.63(53.76)/23.45(5.51)/28.86(28.86)]
-Total time elapsed: 0.620 seconds.
+ Max/Min/Avg Fitness(Raw) [61.08(68.35)/34.01(21.94)/50.90(50.90)]
+Total time elapsed: 0.610 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [12.22(20.83)/9.33(5.73)/10.19(10.19)]
-Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [17.83(39.11)/13.75(5.85)/14.85(14.85)]
-Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [23.69(41.14)/17.36(6.82)/19.74(19.74)]
-Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [32.84(61.70)/24.27(7.91)/27.37(27.37)]
-Total time elapsed: 0.714 seconds.
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [12.74(18.01)/9.08(5.27)/10.62(10.62)]
+Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [17.35(46.33)/13.76(6.80)/14.46(14.46)]
+Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [25.26(60.73)/19.72(8.50)/21.05(21.05)]
+Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [33.75(80.29)/25.79(6.46)/28.12(28.12)]
+Total time elapsed: 1.048 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [14.46(31.98)/11.34(6.19)/12.05(12.05)]
-Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [33.12(59.48)/24.26(8.28)/27.60(27.60)]
-Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [43.48(75.40)/31.72(11.84)/36.23(36.23)]
-Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [64.29(83.49)/39.54(14.38)/53.57(53.57)]
-Total time elapsed: 0.872 seconds.
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [13.92(25.92)/10.56(5.22)/11.60(11.60)]
+Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [29.11(48.37)/21.25(9.29)/24.26(24.26)]
+Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [38.60(71.45)/28.23(8.16)/32.16(32.16)]
+Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [55.18(74.64)/40.34(28.40)/45.98(45.98)]
+Total time elapsed: 0.903 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [14.51(25.33)/10.88(5.46)/12.09(12.09)]
-Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [23.80(52.78)/18.21(6.34)/19.83(19.83)]
-Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [43.45(70.76)/31.74(14.89)/36.21(36.21)]
-Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [68.04(100.68)/47.36(20.47)/56.70(56.70)]
-Total time elapsed: 0.956 seconds.
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [15.96(28.48)/12.04(6.09)/13.30(13.30)]
+Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [25.89(45.78)/18.97(6.98)/21.57(21.57)]
+Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [29.27(54.71)/21.96(9.26)/24.39(24.39)]
+Gen. 30 (100.00%): Max/Min/Avg Fitness(Raw) [56.23(67.91)/38.25(27.53)/46.86(46.86)]
+Total time elapsed: 1.107 seconds.
