@@ -29,7 +29,7 @@ def experiment(sliding_number=3, hidden_node=15):
     ypred_defuzzy = [defuzzy(item % len(u_unique_mapping), u_unique_mapping, u_midpoints) for item in ypred]
     score_mape = mean_absolute_error(ypred_defuzzy, y_actual_test)
     score_rmse = math.sqrt(mean_squared_error(ypred_defuzzy, y_actual_test))
-
+    np.savez('fuzzy_BPNN_%s_%s' % (sliding_number, score_mape), y_pred=ypred_defuzzy, y_true=y_actual_test)
     return sliding_number, score_rmse, score_mape
 
 
