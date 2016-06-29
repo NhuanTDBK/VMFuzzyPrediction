@@ -20,9 +20,9 @@ def experiment(sliding_number=3, hidden_nodes=15):
     fit_params = {
         'neural_shape': [len(X_train_nn[0]), hidden_nodes, 1]
     }
-    ga_estimator = GAEstimator(cross_rate=0.85, mutation_rate=0.05, gen_size=100, pop_size=40)
+    ga_estimator = GAEstimator(cross_rate=0.5, mutation_rate=0.05, gen_size=100, pop_size=40)
     nn = NeuralFlowRegressor(hidden_nodes=[hidden_nodes], optimize='Adam'
-                             , steps=20000, learning_rate=1E-03)
+                             , steps=7000, learning_rate=1E-03)
     classifier = OptimizerNNEstimator(ga_estimator, nn)
     classifier.fit(X_train_nn, y_train_nn, **fit_params)
     y_pred = scaler.inverse_transform(classifier.predict(X_test_nn))
@@ -33,7 +33,7 @@ def experiment(sliding_number=3, hidden_nodes=15):
 
 
 sliding_number = np.arange(2, 6)
-hidden_nodes = [10, 12, 15]
+hidden_nodes = [15]
 params = {
     "sliding_number": sliding_number,
     "hidden_nodes": hidden_nodes

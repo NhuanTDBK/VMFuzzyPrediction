@@ -5,158 +5,54 @@
 /usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
 Loading Data
-Fuzzy distance = 0.2489
+Fuzzy distance = 0.0305
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.90(4.65)/1.43(0.10)/1.58(1.58)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.38(5.24)/1.77(0.28)/1.98(1.98)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.70(7.64)/2.08(0.18)/2.25(2.25)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.37(10.39)/3.25(0.07)/3.64(3.64)]
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.34(5.65)/1.77(0.19)/1.95(1.95)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.05(6.47)/2.25(0.34)/2.54(2.54)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.91(8.02)/2.24(0.32)/2.42(2.42)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.31(10.06)/2.56(0.21)/2.76(2.76)]
 Gen. 40 (100.00%):estimators/NeuralFlow.py:108: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
   if self.weights_matrix == None:
 /usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
 /usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [5.63(11.31)/4.19(1.17)/4.69(4.69)]
-Total time elapsed: 1.335 seconds.
+ Max/Min/Avg Fitness(Raw) [3.23(10.06)/2.51(0.19)/2.69(2.69)]
+Total time elapsed: 1.594 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.15(2.79)/0.86(0.03)/0.96(0.96)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.87(6.76)/2.15(0.22)/2.39(2.39)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.17(8.77)/3.06(0.29)/3.47(3.47)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.42(9.09)/4.31(1.72)/5.35(5.35)]
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.41(3.18)/1.05(0.06)/1.18(1.18)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.95(5.56)/2.11(0.27)/2.46(2.46)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.23(7.42)/2.41(0.17)/2.69(2.69)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.78(10.47)/2.91(0.34)/3.15(3.15)]
 Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
 /usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [8.10(10.47)/5.48(3.24)/6.75(6.75)]
-Total time elapsed: 1.403 seconds.
+ Max/Min/Avg Fitness(Raw) [6.01(11.47)/4.46(1.44)/5.01(5.01)]
+Total time elapsed: 1.789 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.97(2.67)/0.74(0.04)/0.81(0.81)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.62(4.48)/1.24(0.09)/1.35(1.35)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.10(5.83)/1.61(0.10)/1.75(1.75)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.43(6.96)/3.03(0.77)/3.70(3.70)]
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.30(2.82)/0.96(0.12)/1.08(1.08)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.90(6.51)/1.49(0.19)/1.58(1.58)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.92(6.90)/2.85(0.98)/3.26(3.26)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.23(7.58)/3.09(1.03)/3.52(3.52)]
 Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
 /usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
   warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [5.97(9.60)/4.59(3.18)/4.98(4.98)]
-Total time elapsed: 1.939 seconds.
+ Max/Min/Avg Fitness(Raw) [5.58(8.89)/3.72(0.40)/4.65(4.65)]
+Total time elapsed: 1.944 seconds.
 New loop
 Initialization
 Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.86(2.63)/0.67(0.03)/0.72(0.72)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.24(3.02)/0.94(0.15)/1.03(1.03)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.99(4.16)/1.46(0.12)/1.66(1.66)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [2.76(6.21)/2.04(0.10)/2.30(2.30)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [4.40(6.51)/2.91(0.75)/3.66(3.66)]
-Total time elapsed: 1.550 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.64(4.24)/1.24(0.07)/1.36(1.36)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.97(8.23)/2.29(0.27)/2.48(2.48)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [5.40(9.13)/3.68(0.29)/4.50(4.50)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [7.24(10.30)/5.21(3.12)/6.03(6.03)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [8.39(11.46)/5.34(1.73)/6.99(6.99)]
-Total time elapsed: 1.415 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.27(3.02)/0.95(0.04)/1.05(1.05)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.05(4.80)/1.53(0.10)/1.71(1.71)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.54(6.33)/1.91(0.13)/2.11(2.11)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.76(8.40)/2.83(0.56)/3.14(3.14)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [6.79(10.38)/4.82(2.17)/5.66(5.66)]
-Total time elapsed: 1.378 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.94(2.43)/0.71(0.05)/0.78(0.78)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.39(4.39)/1.08(0.08)/1.16(1.16)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.78(5.15)/1.38(0.17)/1.49(1.49)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [2.73(6.38)/2.04(0.13)/2.27(2.27)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [3.94(7.17)/2.80(0.43)/3.28(3.28)]
-Total time elapsed: 1.491 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.05(1.89)/0.73(0.04)/0.87(0.87)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.69(4.16)/1.27(0.08)/1.41(1.41)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.83(5.43)/2.67(1.37)/3.19(3.19)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.89(8.04)/4.26(2.84)/4.91(4.91)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [6.18(8.60)/4.24(2.11)/5.15(5.15)]
-Total time elapsed: 1.536 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.80(4.30)/1.35(0.09)/1.50(1.50)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.51(8.58)/1.98(0.36)/2.09(2.09)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.73(11.25)/3.54(0.24)/3.94(3.94)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.92(11.34)/4.30(0.82)/4.93(4.93)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [8.66(14.74)/6.27(2.31)/7.22(7.22)]
-Total time elapsed: 1.523 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.64(3.40)/1.20(0.09)/1.37(1.37)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.00(6.68)/1.56(0.07)/1.66(1.66)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.02(6.70)/2.23(0.14)/2.52(2.52)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.14(8.01)/2.37(0.13)/2.61(2.61)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [5.75(8.38)/3.94(1.61)/4.79(4.79)]
-Total time elapsed: 1.580 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.33(3.43)/1.01(0.07)/1.10(1.10)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.94(5.18)/1.49(0.20)/1.61(1.61)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.84(6.93)/2.14(0.16)/2.37(2.37)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.41(7.23)/3.15(1.15)/3.67(3.67)]
-Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
-/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
-  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
- Max/Min/Avg Fitness(Raw) [5.34(8.55)/3.71(1.03)/4.45(4.45)]
-Total time elapsed: 1.674 seconds.
-New loop
-Initialization
-Initilization
-Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.31(3.07)/0.98(0.04)/1.09(1.09)]
-Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.43(4.52)/1.11(0.06)/1.19(1.19)]
-Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.85(5.12)/1.42(0.10)/1.54(1.54)]
-Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.66(6.22)/2.62(0.81)/3.05(3.05)]
-Gen. 40 (100.00%): Max/Min/Avg Fitness(Raw) [3.79(7.66)/2.76(0.34)/3.16(3.16)]
-Total time elapsed: 1.817 seconds.
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.11(2.21)/0.81(0.10)/0.93(0.93)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.59(4.83)/1.82(0.10)/2.16(2.16)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.06(5.18)/2.13(0.37)/2.55(2.55)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.08(6.62)/2.28(0.27)/2.57(2.57)]
+Gen. 40 (100.00%): Max/Min/Avg Fitness(Raw) [6.27(8.52)/4.44(2.75)/5.23(5.23)]
+Total time elapsed: 2.472 seconds.

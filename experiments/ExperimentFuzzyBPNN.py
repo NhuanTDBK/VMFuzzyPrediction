@@ -23,7 +23,7 @@ def experiment(sliding_number=3, hidden_node=15):
         'neural_shape': [len(X_train[0]), n_hidden, 1]
     }
     classifier = NeuralFlowRegressor(hidden_nodes=[n_hidden], optimize='Adam'
-                                     , steps=20000, learning_rate=1E-02)
+                                     , steps=8000, learning_rate=1E-02)
     a = classifier.fit(X_train, y_train, **fit_params)
     ypred = np.round(abs(classifier.predict(X_test))).flatten()
     ypred_defuzzy = [defuzzy(item % len(u_unique_mapping), u_unique_mapping, u_midpoints) for item in ypred]
