@@ -2,52 +2,62 @@ import pandas as pd
 import numpy as np
 import math
 class FuzzyFlow(object):
-    def __init__(self,fuzzy_distance = 0.02,fuzzy_set_size = 0, fuzzy_norm = 0.25):
 
-        self.fuzzy_distance = fuzzy_distance
-        self.fuzzy_set_size = fuzzy_set_size
-        self.fuzzy_norm = fuzzy_norm
-    def fuzzy(self,training_set):
-        length_x_train = training_set.size
-        #  Calculate difference in training data
-        difference = np.zeros(length_x_train - 1)
-        for i in range(0, length_x_train - 1):
-            difference[i] = training_set[i + 1] - training_set[i] + self.fuzzy_norm
-        # Estimate fuzzy size
-        if(self.fuzzy_set_size==0):
-            self.fuzzy_set_size = int(math.ceil(difference.max()/self.fuzzy_distance)+1)
-        print self.fuzzy_set_size
-        # Generate fuzzy set
-        self.fuzzy_set = np.zeros(self.fuzzy_set_size)
-        for i in range(0, self.fuzzy_set_size):
-            self.fuzzy_set[i] = self.fuzzy_distance * (i + 0.5)
-        fuzzy_result = np.zeros([length_x_train - 1, self.fuzzy_set_size])
-        for i in range(1, length_x_train - 2):
-            j = int(difference[i] / self.fuzzy_distance)
-            fuzzy_result[i][j] = 1
-            fuzzy_result[i][j - 1] = (self.fuzzy_set[j + 1] + self.fuzzy_set[j] - 2 * difference[i]) / (2 * self.fuzzy_distance)
-            fuzzy_result[i][j + 1] = (- self.fuzzy_set[j - 1] - self.fuzzy_set[j] + 2 * difference[i]) / (2 * self.fuzzy_distance)
-        # df = pd.DataFrame(data = fuzzy_result)
-        # df.to_csv('x_train.csv')
-        self.difference = difference
-        return fuzzy_result
-    def defuzzy(self,testing_set, training_result):
-        # df = pd.DataFrame(data=training_result)
-        # df.to_csv('y_predict.csv')
-        # difference = self.difference
-        length_y_test = testing_set.size
-        y_pred = np.zeros([length_y_test - 1])
-        for i in range (0, length_y_test - 1):
-            tu = 0
-            mau = 0
+    def get_midpoint(self,ptuple):
+        return 0.5 * (ptuple[0] + ptuple[1])
 
-            for j in range (0, self.fuzzy_set_size):
-                tu = tu + self.fuzzy_set[j] *  training_result[i][j]
-                mau = mau + training_result[i][j]
-            difference = tu / mau - self.fuzzy_norm
-            y_pred[i] = testing_set[i] + difference
-        return y_pred
-    def fit_transform(self,data):
-        return self.fuzzy(training_set=data)
-    def inverse_transform(self, testing_set, training_result):
-        return self.defuzzy(testing_set=testing_set,training_result=training_result)
+    def get_midpoint_vector(self,tuple_vector):
+        return [self.get_midpoint(x) for x in tuple_vector];
+
+    def get_fuzzy_class(self,point, partition_size):
+        return int(math.floor(point / partition_size))
+
+    def get_fuzzy_dataset(self,data):
+        u_class = []
+        for item in data:
+            u_class.append(self.get_fuzzy_class(item, self.partition_size))
+        return u_class
+
+    def mapping_class(self,u_class):
+        unique_class = np.unique(u_class)
+        index = np.arange(unique_class.shape[0])
+        inverted = {}
+        mapping = {}
+        for idx, val in enumerate(unique_class):
+            mapping[val] = idx
+            inverted[idx] = val
+        return mapping, inverted
+
+    def defuzzy(self,index, inverted, midpoints):
+        f_class = inverted[index]
+        return midpoints[f_class]
+    def fit_transform(self,dat):
+        distance = round(dat.max() / (dat.max() / 0.25 + 4), 4)
+        partition_size = distance
+        self.partition_size = partition_size
+        umin = math.floor(min(dat))
+        umax = math.ceil(max(dat))
+
+        # 2: Partition of universe
+        # Method: Dividing in the half-thousands
+
+        nIter = int((umax - umin) / partition_size)
+        u_vectorized = []
+
+        for i in range(nIter):
+            u_vectorized.append((umin + i * partition_size, umin + (i + 1) * partition_size));
+
+        u_midpoints = self.get_midpoint_vector(u_vectorized)
+        u_class = np.array(self.get_fuzzy_dataset(dat), dtype=np.int32)
+
+        u_unique_inverted, u_unique_mapping = self.mapping_class(u_class)
+        u_class_transform = [u_unique_inverted[item] for item in u_class]
+
+        self.u_unique_mapping = u_unique_mapping
+        self.u_midpoints = u_midpoints
+
+        self.u_class = u_class
+        self.u_class_transform = u_class_transform
+        return self
+    def inverse_transform(self, ypred):
+        return [self.defuzzy(item%len(self.u_unique_mapping),self.u_unique_mapping,self.u_midpoints) for item in ypred]
