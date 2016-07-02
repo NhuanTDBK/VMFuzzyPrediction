@@ -10,7 +10,7 @@ trainee_holder = {}
 metrics = ["cpu_rate","mem_usage"]
 arr_desk = ['X_train','y_train','X_test']
 sliding_number = 3
-data = pd.read_csv('../sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
+data = pd.read_csv('sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
 def experiment(sliding_number):
     for metric in metrics:
         dat = pd.Series(data[metric].round(3))
@@ -47,7 +47,7 @@ def experiment(sliding_number):
     y_ram = dataset_holder[1].inverse_transform(abs(y_pred[:, 1]))
     score_mae_CPU = mean_absolute_error(y_cpu, trainee_holder['cpu_rate']['y_test'])
     score_mae_RAM = mean_absolute_error(y_ram, trainee_holder['mem_usage']['y_test'])
-    np.savez('Fuzzy_BPNNM_%s_%s' % (sliding_number, score_mae_CPU), y_pred=y_pred, y_true=y_test)
+    np.savez('model_saved/Fuzzy_BPNNM_%s_%s' % (sliding_number, score_mae_CPU), y_pred=y_pred, y_true=y_test)
     return sliding_number, score_mae_CPU, score_mae_RAM
 result = [experiment(sliding_number=i) for i in np.arange(2, 6)]
 result = pd.DataFrame(result, columns=["sliding_number", "MAE CPU", "MAE RAM"])

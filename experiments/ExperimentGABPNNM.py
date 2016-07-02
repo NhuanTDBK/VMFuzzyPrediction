@@ -1,6 +1,6 @@
 from __init__fuzzy import *
 
-dat = pd.read_csv('../sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
+dat = pd.read_csv('sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
 gFeeder = GFeeder()
 def experiment(sliding_number):
     X_train, y_train, X_test, y_test = gFeeder.split_train_and_test(dat, metrics=['cpu_rate','mem_usage'], n_sliding_window=sliding_number)
@@ -18,7 +18,7 @@ def experiment(sliding_number):
     y_ram = ypred[:,1]
     score_mae_CPU = mean_absolute_error(y_cpu, y_test[:,0])
     score_mae_RAM =  mean_absolute_error(y_ram, y_test[:,1])
-    np.savez('GABPNNM_%s_%s'%(sliding_number,score_mae_CPU),y_pred=ypred, y_true=y_test)
+    np.savez('model_saved/GABPNNM_%s_%s'%(sliding_number,score_mae_CPU),y_pred=ypred, y_true=y_test)
     return sliding_number, score_mae_CPU, score_mae_RAM
 
 result = [experiment(sliding_number=i) for i in np.arange(2, 6)]

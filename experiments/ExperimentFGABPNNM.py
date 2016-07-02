@@ -53,7 +53,7 @@ def experiment(sliding_number):
     y_ram = dataset_holder[1].inverse_transform(abs(y_pred[:, 1]))
     score_mae_CPU = mean_absolute_error(y_cpu, trainee_holder['cpu_rate']['y_test'])
     score_mae_RAM = mean_absolute_error(y_ram, trainee_holder['mem_usage']['y_test'])
-    np.savez('FGABPNNM_%s_%s' % (sliding_number, score_mae_CPU), y_pred=y_pred, y_true=y_test)
+    np.savez('model_saved/FGABPNNM_%s_%s' % (sliding_number, score_mae_CPU), y_pred=y_pred, y_true=y_test)
     return sliding_number, score_mae_CPU, score_mae_RAM
 result = [experiment(sliding_number=i) for i in np.arange(2, 6)]
 result = pd.DataFrame(result, columns=["sliding_number", "MAE CPU", "MAE RAM"])

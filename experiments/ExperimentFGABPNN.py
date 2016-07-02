@@ -22,8 +22,8 @@ def experiment(sliding_number=3, hidden_node=15):
     fit_params = {
         'neural_shape': [len(X_train[0]), n_hidden, 1]
     }
-    ga_estimator = GAEstimator(cross_rate=0.48, mutation_rate=0.02, gen_size=100, pop_size=50)
-    nn = NeuralFlowRegressor(hidden_nodes=[n_hidden], optimize='Adam',activation='sigmoid'
+    ga_estimator = GAEstimator(cross_rate=0.5, mutation_rate=0.02, gen_size=100, pop_size=50)
+    nn = NeuralFlowRegressor(hidden_nodes=[n_hidden], optimize='Adam', activation='sigmoid'
                              , steps=7000, learning_rate=1E-03)
     classifier = OptimizerNNEstimator(ga_estimator, nn)
 
