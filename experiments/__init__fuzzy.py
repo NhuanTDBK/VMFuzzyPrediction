@@ -20,7 +20,7 @@ metric = {
 	"mem_usage":0.0308,
 	"cpu_rate":0.25
 }
-metric_type = "cpu_rate"
+metric_type = "mem_usage"
 scaler = MinMaxScaler()
 dat = pd.read_csv('sampling_617685_metric_10min_datetime.csv', parse_dates=True, index_col=0)[:3000]
 dat = pd.Series(dat[metric_type].round(3))
