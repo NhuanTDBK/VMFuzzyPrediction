@@ -1,7 +1,7 @@
 from abc import abstractmethod
 class BaseStrategy(object):
     @abstractmethod
-    def allocate_VMs(self, resource_used):
+    def basic_allocate_VMs(self, resource_used):
         pass
     def sla_violate(self, allocated = None, used=None):
         number_of_points = len(allocated)

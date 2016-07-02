@@ -12,7 +12,9 @@ class ProactiveSLA(BaseStrategy):
 
     def allocate_VM(self, res_consump):
         return math.ceil(res_consump / self.capacity_VM)
-
+    def basic_allocate_VMs(self, resource_used):
+        actual_allocated = np.array([self.allocate_VM(item) for item in resource_used])
+        return actual_allocated
     def allocate_VMs(self, resource_used=None, resource_predicted = None):
         self.data_used = resource_used
         self.data_pred = resource_predicted
