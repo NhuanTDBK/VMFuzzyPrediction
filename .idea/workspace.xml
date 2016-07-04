@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d41c82a5-161f-4956-bfc4-136da9ee11b3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/FuzzyMyEngine-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FuzzyEngine.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FuzzyMyEngine.ipynb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuzzy_train_direct_RAM.npz" afterPath="$PROJECT_DIR$/fuzzy_train_direct_RAM.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/FGABPNNM_3_0.759630623608.npz" afterPath="$PROJECT_DIR$/model_saved/FGABPNNM_3_0.759630623608.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/FGABPNNM_4_0.901227257525.npz" afterPath="$PROJECT_DIR$/model_saved/FGABPNNM_4_0.901227257525.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_2_0.840208954394.npz" afterPath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_2_0.840208954394.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_3_0.889221492205.npz" afterPath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_3_0.889221492205.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_4_0.840165384615.npz" afterPath="$PROJECT_DIR$/model_saved/Fuzzy_BPNNM_4_0.840165384615.npz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_saved/Result_2_7/Fuzzy_BPNNM_5_0.896544977679.npz" afterPath="$PROJECT_DIR$/model_saved/Result_2_7/Fuzzy_BPNNM_5_0.896544977679.npz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Scaling-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Scaling-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/ScalingMultiDimension-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/ScalingMultiDimension-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scaling.ipynb" afterPath="$PROJECT_DIR$/Scaling.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalingMultiDimension.ipynb" afterPath="$PROJECT_DIR$/ScalingMultiDimension.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/ExperimentFGABPNNM.py" afterPath="$PROJECT_DIR$/experiments/ExperimentFGABPNNM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/ExperimentFuzzyBPNNM.py" afterPath="$PROJECT_DIR$/experiments/ExperimentFuzzyBPNNM.py" />
     </list>
     <ignored path="VMFuzzyPrediction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,16 +58,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseStrategy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scaling/BaseStrategy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="__init__fuzzy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiments/__init__fuzzy.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,8 +83,8 @@
       <file leaf-file-name="ExperimentFGABPNNM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiments/ExperimentFGABPNNM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
+            <state relative-caret-position="68">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -114,7 +115,7 @@
       <file leaf-file-name="ExperimentFGABPNN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiments/ExperimentFGABPNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="450">
               <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
               <folding />
             </state>
@@ -124,7 +125,7 @@
       <file leaf-file-name="ExperimentFuzzyBPNNM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiments/ExperimentFuzzyBPNNM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="660">
               <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="92" />
               <folding />
             </state>
@@ -182,10 +183,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="711" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="682" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -231,6 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,38 +251,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VMFuzzyPrediction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VMFuzzyPrediction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model_saved" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VMFuzzyPrediction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VMFuzzyPrediction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="experiments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,10 +522,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="711" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="682" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2638266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2638266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251318" sideWeight="0.50298953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -621,7 +593,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiments/GridSearchNNPD.py" />
     <entry file="file://$PROJECT_DIR$/FuzzyEngine_Sliding_CPU.py" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/load_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scaling/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -846,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/ExperimentFGABPNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="450">
           <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
           <folding />
         </state>
@@ -912,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/ExperimentFuzzyBPNNM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="660">
           <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="92" />
           <folding />
         </state>
@@ -926,10 +886,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/io_utils/NumLoad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/load_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiments/ExperimentFGABPNNM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
+        <state relative-caret-position="68">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
