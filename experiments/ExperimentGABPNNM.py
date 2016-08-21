@@ -21,7 +21,9 @@ def experiment(sliding_number):
     np.savez('model_saved/GABPNNM_%s_%s'%(sliding_number,score_mae_CPU),y_pred=ypred, y_true=y_test)
     return sliding_number, score_mae_CPU, score_mae_RAM
 
-result = [experiment(sliding_number=i) for i in np.arange(2, 6)]
-result = pd.DataFrame(result, columns=["sliding_number", "MAE CPU", "MAE RAM"])
-result.to_csv('gabpnnm_experiment.csv')
+result = [[experiment(sliding_number=i) for i in np.arange(2,6)] for j in np.arange(10)]
+results = pd.DataFrame(np.array(result).reshape(-1,3), columns=["sliding_number", "MAE CPU", "MAE RAM"])
+#results.to_csv('experiment_logs/fgabpnnm_experiment.csv')
+results.to_csv('experiment_logs/gabpnnm_experimentm.csv')
+
 

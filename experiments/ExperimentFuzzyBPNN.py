@@ -23,16 +23,20 @@ def experiment(sliding_number=3, hidden_node=15):
         'neural_shape': [len(X_train[0]), n_hidden, 1]
     }
     classifier = NeuralFlowRegressor(hidden_nodes=[n_hidden], optimize='Adam'
-                                     , steps=8000, learning_rate=1E-02)
+                                     , steps=4000, learning_rate=1E-02,cv=True)
     a = classifier.fit(X_train, y_train, **fit_params)
     ypred = np.round(abs(classifier.predict(X_test))).flatten()
-    ypred_defuzzy = [defuzzy(item % len(u_unique_mapping), u_unique_mapping, u_midpoints) for item in ypred]
+    ypred_defuzzy = [defuzzy(item, u_unique_mapping, u_midpoints) for item in ypred]
     score_mape = mean_absolute_error(ypred_defuzzy, y_actual_test)
     score_rmse = math.sqrt(mean_squared_error(ypred_defuzzy, y_actual_test))
     np.savez('model_saved/fuzzy_BPNN_%s_%s' % (sliding_number, score_mape), y_pred=ypred_defuzzy, y_true=y_actual_test)
     return sliding_number, score_rmse, score_mape
 
 
-result = [experiment(sliding_number=i) for i in np.arange(2, 6)]
-result = DataFrame(result, columns=["sliding_number", "rmse", "mae"])
-result.to_csv('fuzzy_bpnn_experiment.csv')
+result = [[experiment(sliding_number=i) for i in np.arange(2,6)] for j in np.arange(10)]
+#np.savez("BPNN_epochs",result=result)
+results = DataFrame(np.array(result).reshape(-1,3), columns=["sliding_number","rmse","mae"])
+#results.to_csv('experiment_logs/fgabpnn_experiment.csv')
+results.to_csv('experiment_logs/fuzzy_bpnn_experiment.csv')
+
+

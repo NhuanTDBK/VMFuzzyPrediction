@@ -39,8 +39,8 @@ def experiment(sliding_number):
         X_test.append(np.ravel(tmp))
     X_train = np.array(X_train)
     X_test = np.array(X_test)
-    classifier = NeuralFlowRegressor(hidden_nodes=[10], activation='sigmoid'
-                                     , steps=8000, learning_rate=1E-03)
+    classifier = NeuralFlowRegressor(hidden_nodes=[8]
+                                     , steps=4000, learning_rate=1E-03,cv=True)
     a = classifier.fit(X_train, y_train)
     y_pred = np.round(abs(classifier.predict(X_test)))
     y_cpu = dataset_holder[0].inverse_transform(abs(y_pred[:, 0]))
@@ -50,7 +50,8 @@ def experiment(sliding_number):
     y_test = zip(trainee_holder['cpu_rate']['y_test'],trainee_holder['mem_usage']['y_test'])
     np.savez('model_saved/Fuzzy_BPNNM_%s_%s' % (sliding_number, score_mae_CPU), y_pred=y_pred, y_true=y_test)
     return sliding_number, score_mae_CPU, score_mae_RAM
-result = [experiment(sliding_number=i) for i in np.arange(2, 6)]
-result = pd.DataFrame(result, columns=["sliding_number", "MAE CPU", "MAE RAM"])
-result.to_csv('fuzzy_bpnn_experimentm.csv')
+result = [[experiment(sliding_number=i) for i in np.arange(2,6)] for j in np.arange(10)]
+results = pd.DataFrame(np.array(result).reshape(-1,3), columns=["sliding_number", "MAE CPU", "MAE RAM"])
+#results.to_csv('experiment_logs/fgabpnnm_experiment.csv')
+results.to_csv('experiment_logs/fuzzy_bpnn_experimentm.csv')
 

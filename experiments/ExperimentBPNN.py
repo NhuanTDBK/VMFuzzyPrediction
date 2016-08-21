@@ -1,7 +1,7 @@
 import math
 
 from pandas import DataFrame
-
+import numpy as np 
 from __init__fuzzy import *
 
 
@@ -23,7 +23,7 @@ def experiment(sliding_number=3, hidden_node=15):
     np.savez('model_saved/BPNN_%s_%s' % (sliding_number, score_mape), y_pred=y_pred, y_true=y_actual_test)
     return sliding_number, score_rmse, score_mape
 
-
-result = [experiment(sliding_number=i) for i in np.arange(2,6)]
-result = DataFrame(result, columns=["sliding_number","rmse","mae"])
-result.to_csv('bpnn_experiment.csv')
+result = [[experiment(sliding_number=i) for i in np.arange(2,6)] for j in np.arange(10)]
+#np.savez("BPNN_epochs",result=result)
+results = DataFrame(np.array(result).reshape(-1,3), columns=["sliding_number","rmse","mae"])
+results.to_csv('experiment_logs/bpnn_experiment.csv')

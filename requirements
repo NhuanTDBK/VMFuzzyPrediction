@@ -3,4 +3,5 @@ pandas
 theano
 sklearn
 lasagne
+keras
 git+git://github.com/tensorflow/skflow.git

@@ -28,7 +28,7 @@ class NeuralFlowRegressor(BaseEstimator):
         return self
 
     def __init__(self, uniform_init=True, learning_rate=1E-01, activation="relu", optimize="Adam", steps=1000,
-                 batch_size=100, weights_matrix=None, model_fn=None,verbose=0,cross_validation=False,n_classes = 0,hidden_nodes=None):
+                 batch_size=100, weights_matrix=None, model_fn=None,verbose=0,cv=False,n_classes = 0,hidden_nodes=None):
         print "Initialization"
 	self.activation_name = activation
         activate_fn = {
@@ -56,7 +56,7 @@ class NeuralFlowRegressor(BaseEstimator):
         self.network = None
         self.verbose = verbose
         self.n_classes = n_classes
-        self.cross_validation = cross_validation
+        self.cross_validation = cv
         if type(hidden_nodes) is list:
             self.hidden_nodes = np.array(hidden_nodes)
         else:
@@ -95,7 +95,7 @@ class NeuralFlowRegressor(BaseEstimator):
             self.neural_shape.insert(0,self.n_input)
             self.neural_shape.append(self.n_output)
             self.n_hidden = self.hidden_nodes
-        self.kFold = KFold(X.shape[0], n_folds=5)
+        self.kFold = KFold(X.shape[0], n_folds=10, shuffle=True)
         self.weights_matrix = param.get('weights_matrix')
         self.weight_layers = [(self.neural_shape[t - 1], self.neural_shape[t]) for t in
                               range(1, len(self.neural_shape))]
@@ -121,6 +121,8 @@ class NeuralFlowRegressor(BaseEstimator):
                                                   batch_size=self.batch_size,
                                                   optimizer=self.optimize,verbose=self.verbose,continue_training=True)
         if(self.cross_validation):
+	    X = np.array(X)
+	    y = np.array(y)
             for train,test in self.kFold:
                 self.network.fit(X[train],y[train])
         else:

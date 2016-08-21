@@ -2,7 +2,7 @@ from __future__ import division
 import numpy as np
 import math
 from BaseStrategy import BaseStrategy
-class ProactiveSLA(BaseStrategy):
+class OnDemand(BaseStrategy):
     """Creates scaling decision
 
     Args:

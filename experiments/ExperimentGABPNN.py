@@ -29,7 +29,7 @@ def experiment(sliding_number=3, hidden_nodes=15):
     score_mape = mean_absolute_error(y_pred, y_actual_test)
     score_rmse = math.sqrt(mean_squared_error(y_pred, y_actual_test))
     np.savez('model_saved/GABPNN_%s_%s' % (sliding_number, score_mape), y_pred=y_pred, y_true=y_actual_test)
-    return sliding_number, hidden_nodes, score_rmse, score_mape
+    return sliding_number, score_rmse, score_mape
 
 
 sliding_number = np.arange(2, 6)
@@ -39,7 +39,7 @@ params = {
     "hidden_nodes": hidden_nodes
 }
 param_grid = list(ParameterGrid(params))
-result = [experiment(sliding_number=param['sliding_number'], hidden_nodes=param['hidden_nodes']) for param in
-          param_grid]
-result = DataFrame(result, columns=["sliding_number", "hidden_nodes", "rmse", "mae"])
-result.to_csv('gabpnn_experiment.csv')
+result = [[experiment(sliding_number=param['sliding_number'], hidden_nodes=param['hidden_nodes']) for param in
+          param_grid] for j in range(10)]
+results = DataFrame(np.array(result).reshape(-1,3), columns=["sliding_number","rmse","mae"])
+results.to_csv('experiment_logs/gabpnn_experiment.csv')
