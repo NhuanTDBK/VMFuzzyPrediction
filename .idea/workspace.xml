@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41c82a5-161f-4956-bfc4-136da9ee11b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FuzzyMultiDimensions.ipynb" afterPath="$PROJECT_DIR$/FuzzyMultiDimensions.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimators/FuzzyFlow.py" afterPath="$PROJECT_DIR$/estimators/FuzzyFlow.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/ExperimentBPNNM.py" afterPath="$PROJECT_DIR$/experiments/ExperimentBPNNM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/__init__fuzzy.py" afterPath="$PROJECT_DIR$/experiments/__init__fuzzy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sampling_617685_metric_10min_datetime.csv" afterPath="$PROJECT_DIR$/sampling_617685_metric_10min_datetime.csv" />
     </list>
     <ignored path="VMFuzzyPrediction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="ExperimentBPNNM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiments/ExperimentBPNNM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="255">
+              <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -924,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/ExperimentBPNNM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
           <folding />
         </state>
       </provider>
