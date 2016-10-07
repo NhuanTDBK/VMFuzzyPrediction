@@ -31,8 +31,8 @@ class FuzzyFlow(object):
     def defuzzy(self,index, inverted, midpoints):
         f_class = inverted[index]
         return midpoints[f_class]
-    def fit_transform(self,dat):
-        distance = round(dat.max() / (dat.max() / 0.25 + 4), 4)
+    def fit_transform(self,dat,skip_value=0.25):
+        distance = round(dat.max() / (dat.max() / skip_value + 4), 4)
         partition_size = distance
         self.partition_size = partition_size
         umin = math.floor(min(dat))

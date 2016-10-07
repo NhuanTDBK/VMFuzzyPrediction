@@ -26,6 +26,19 @@ dat = pd.read_csv('sampling_617685_metric_10min_datetime.csv', parse_dates=True,
 dat = pd.Series(dat[metric_type].round(3))
 distance = round(dat.max() / (dat.max() / metric[metric_type] + 2),4)
 print "Fuzzy distance = %s"%distance
+origin_dat = pd.read_csv("sampling_617685_metric_10min_datetime_origin.csv")
+
+cpu_scaler = MinMaxScaler()
+cpu_scaler.fit(origin_dat['cpu_rate'])
+
+ram_scaler = MinMaxScaler()
+ram_scaler.fit(origin_dat['mem_usage'])
+
+diskio_scaler = MinMaxScaler()
+diskio_scaler.fit(origin_dat['disk_io_time'])
+
+diskspace_scaler = MinMaxScaler()
+diskspace_scaler.fit(origin_dat['disk_space'])
 
 partition_size = distance
 umin = math.floor(min(dat));
