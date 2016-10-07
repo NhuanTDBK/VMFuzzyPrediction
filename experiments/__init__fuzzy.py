@@ -13,7 +13,7 @@ from io_utils.NumLoad import *
 from estimators.OptimizerNNEstimator import OptimizerNNEstimator
 from scaling.ProactiveSLA import ProactiveSLA
 from io_utils.GFeeder import GFeeder
-
+from estimators.KerasRegressor import KerasRegressor
 print "Loading Data"
 
 metric = {

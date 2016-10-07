@@ -3,8 +3,8 @@ from __init__fuzzy import *
 dat = pd.read_csv('sampling_617685_metric_10min_datetime.csv',parse_dates=True,index_col=0)[:3000]
 gFeeder = GFeeder()
 def experiment(sliding_number):
-    X_train, y_train, X_test, y_test = gFeeder.split_train_and_test(dat, metrics=['cpu_rate','mem_usage'], n_sliding_window=sliding_number)
-    classifier = NeuralFlowRegressor(hidden_nodes=[20],steps=7000,learning_rate=1E-02)
+    X_train, y_train, X_test, y_test = gFeeder.split_train_and_test(dat, metrics=['cpu_rate','mem_usage','disk_space'], n_sliding_window=sliding_number)
+    classifier = KerasRegressor(hidden_nodes=[10],steps=7000,learning_rate=1E-02)
     a = classifier.fit(X_train, y_train)
     ypred = classifier.predict(X_test)
     y_cpu = ypred[:,0]
