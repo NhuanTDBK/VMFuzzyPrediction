@@ -15,7 +15,7 @@ def experiment(sliding_number):
     score_mae_RAM =  mean_absolute_error(ram_scaler.inverse_transform(y_ram), ram_scaler.inverse_transform(y_test[:,1]))
     score_mae_diskio = mean_absolute_error(diskio_scaler.inverse_transform(y_disk_space),diskio_scaler.inverse_transform(y_test[:,2]))
     np.savez('model_saved/BPNNM_%s_%s'%(sliding_number,score_mae_CPU),y_pred=ypred, y_true=y_test)
-    return sliding_number, score_mae_CPU, score_mae_RAM, score_mae_diskio,score_mae_diskio
+    return [sliding_number, score_mae_CPU, score_mae_RAM, score_mae_diskio]
 
 result = [[experiment(sliding_number=i) for i in np.arange(2,6)] for j in np.arange(2)]
 cols = ["sliding_number"]
